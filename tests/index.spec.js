@@ -16,5 +16,9 @@ describe('Module', () => {
     it('should return true if a given value is a boolean', () => {
         expect(type.isBoolean(false)).to.be.true;
     });
+
+    it('should return false if a given value is not a boolean', () => {
+        expect(type.isBoolean('string')).to.be.false;
+    });
   })
 })
