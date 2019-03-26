@@ -11,6 +11,10 @@ describe('Module', () => {
 
     it('should return true if a given value is a boolean', () => {
         expect(type.isBoolean(true)).to.be.true;
-    })
+    });
+
+    it('should return true if a given value is a boolean', () => {
+        expect(type.isBoolean(false)).to.be.true;
+    });
   })
 })
